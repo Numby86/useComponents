@@ -1,0 +1,67 @@
+.myPagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginationBttns {
+    font-size: 20px;
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .paginationBttns a {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 12px;
+    border: 1px solid rgb(0, 255, 213);
+    color: rgb(0, 255, 213);
+    cursor: pointer;
+    box-shadow: 0 0 15px #E94BE8;
+  }
+  
+  .paginationBttns a:hover {
+    color: rgb(5, 5, 22);
+    background-color: rgb(0, 255, 213);
+  }
+  
+  .paginationActive a {
+    color: rgb(5, 5, 22);
+    background-color: rgb(0, 255, 213);
+  }
+  
+//   .paginationDisabled a {
+//     display: none;
+//   }
+
+  .goCode{
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: transparent;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    &:hover{
+      border: 2px solid rgb(0, 255, 213);
+      box-shadow: 0 0 15px #E94BE8;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .nextBttn, .previousBttn {
+      display: none;
+    }
+  }
+  
+  // @media all and (min-width: 480px) and (max-width: 900px) {
+
+  // }
+  
+  // @media all and (min-width: 900px) and (max-width: 1024px) {
+
+  // }
